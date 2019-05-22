@@ -6,3 +6,4 @@ ENV POSTGRES_USER cool_user
 ENV POSTGRES_PASSWORD cool_password
 
 ADD /config/sql/createSchema.sql /docker-entrypoint-initdb.d/createSchema.sql
+ADD /config/sql/batchSchema.sql /docker-entrypoint-initdb.d/batchSchema.sql
