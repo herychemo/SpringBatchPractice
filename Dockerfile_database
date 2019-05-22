@@ -1,0 +1,8 @@
+FROM postgres:11.2
+MAINTAINER Heriberto Reyes Esparza <hery.chemo@gmail.com>
+
+ENV POSTGRES_DB cool_db
+ENV POSTGRES_USER cool_user
+ENV POSTGRES_PASSWORD cool_password
+
+ADD /config/sql/createSchema.sql /docker-entrypoint-initdb.d/createSchema.sql

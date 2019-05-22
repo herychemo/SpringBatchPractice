@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+
+  postgresqlserver:
+    build:
+      context: .
+      dockerfile: Dockerfile_database
+    image: postgres-batch:0.1.0
+    container_name: postgresqlserver
+    hostname: postgresqlserver
+    ports:
+      - 5432:5432
+    networks:
+      - batch_network
+
+networks:
+  batch_network:
