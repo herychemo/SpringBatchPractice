@@ -21,7 +21,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 
-import javax.batch.api.listener.JobListener;
 import javax.sql.DataSource;
 
 @Configuration
